@@ -41,7 +41,7 @@
     "pg-promise": "^11.5.5",
     "reconnecting-websocket": "^4.4.0",
     "socket.io": "^4.8.0",
-    "ws": "^8.17.1"
+    "ws": "^8.18.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
