@@ -1,5 +1,14 @@
 # Bliss Autopricer
 
+> [!CAUTION]
+> **PROJECT DISCONTINUED — NO LONGER MAINTAINED**
+>
+> I am no longer developing or maintaining Bliss Autopricer. **No further updates, bug fixes, security patches, compatibility updates, or technical support are planned.**
+>
+> This repository is retained for reference and for anyone who wishes to fork or continue the project independently. The software is provided **as-is**, and I cannot guarantee that it still works with current versions of TF2Autobot, backpack.tf, Steam, or its dependencies.
+>
+> **Please do not open issues or pull requests expecting a response, review, or fix from me.** If you wish to continue development, you are welcome to fork the repository in accordance with its licence.
+
 [![npm version](https://img.shields.io/npm/v/pg-promise?label=pg-promise)](https://www.npmjs.com/package/pg-promise)
 [![Node.js](https://img.shields.io/badge/node-%3E=22.0.0-brightgreen)](https://nodejs.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%3E=12-blue)](https://www.postgresql.org/)
@@ -7,19 +16,19 @@
 [![Prettier](https://img.shields.io/badge/code_style-Prettier-ff69b4)](https://prettier.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> **⚠️ IMPORTANT FOR EXISTING USERS**: If you're upgrading from a previous version, you **MUST** re-scan or re-add your bots after installation. The bot configuration system has been completely overhauled to use direct file paths. Run `npm run setup` or use the web interface at `http://localhost:3000/bot-config` to reconfigure your bots.
+> **Historical upgrade note (for existing installations):** If you're upgrading from a previous version, you **MUST** re-scan or re-add your bots after installation. The bot configuration system has been completely overhauled to use direct file paths. Run `npm run setup` or use the web interface at `http://localhost:3000/bot-config` to reconfigure your bots.
 
 <div align="center">
   <img src="https://github.com/jack-richards/bptf-autopricer/assets/58331725/203fe808-30ff-4d7d-868c-a3ef6d31497d" alt="Bliss Autopricer Logo" style="width: 280px; height: 320px;">
 </div>
 
-An advanced TF2 item pricing system that uses live backpack.tf listings and Steam Community Market data to generate intelligent, profitable prices for TF2Autobot. This enhanced fork builds upon [Jack Richards' excellent original autopricer](https://github.com/jack-richards/bptf-autopricer) with significant improvements to reliability, multi-bot support, and pricing intelligence.
+Bliss Autopricer was developed as a TF2 item pricing system that uses live backpack.tf listings and Steam Community Market data to generate intelligent, profitable prices for TF2Autobot. This fork was based on [Jack Richards' excellent original autopricer](https://github.com/jack-richards/bptf-autopricer) with significant improvements to reliability, multi-bot support, and pricing intelligence.
 
-## 🚀 Quick Start
+## 🚀 Installation (Legacy / Unsupported)
 
 ```bash
 # 1. Clone and install
-git clone https://github.com/OliverPerring/bliss-autopricer.git
+git clone https://github.com/TF2-Price-DB/bliss-autopricer.git
 cd bliss-autopricer
 npm install
 
@@ -33,9 +42,9 @@ npm run validate-config
 npm start
 ```
 
-Visit the web interface at `http://localhost:3000` to manage your pricing!
+If the installation works with your environment, the web interface is available at `http://localhost:3000`. These instructions are preserved for reference and are **not actively tested or supported**.
 
-## ✨ What's New in This Fork
+## ✨ Features Added in This Fork
 
 ### 🏆 Major Enhancements Over Jack's Original
 
@@ -51,7 +60,7 @@ Visit the web interface at `http://localhost:3000` to manage your pricing!
 
 **Huge thanks to [Jack Richards](https://github.com/jack-richards)** for creating the original [bptf-autopricer](https://github.com/jack-richards/bptf-autopricer)! This fork builds upon his excellent foundation with enhanced features for modern TF2 trading needs.
 
-## 🎯 Key Features
+## 🎯 Key Features (Historically Implemented)
 
 ### Intelligent Pricing System
 
@@ -75,14 +84,14 @@ Visit the web interface at `http://localhost:3000` to manage your pricing!
 - **⚡ Rate Limiting**: Intelligent API request management
 - **📦 Batch Processing**: Efficient handling of large item lists
 
-## 📋 Requirements
+## 📋 Original Requirements (Not Revalidated)
 
 - **Node.js** v22.0.0+ (required for built-in fetch support)
 - **PostgreSQL** v12+
 - **TF2Autobot** (any recent version)
 - **API Keys**: backpack.tf API key and Steam API key
 
-## 📖 Documentation
+## 📖 Documentation (Unmaintained)
 
 - **[📦 Installation Guide](docs/INSTALLATION.md)** - Complete setup instructions
 - **[🤖 Multi-Bot Setup](docs/MULTI-BOT.md)** - Managing multiple bots
@@ -136,7 +145,7 @@ The web dashboard provides:
 
 ## 🔄 Updating Your Installation
 
-If you've already cloned the repository and want to update to the latest version:
+To pull the last available version of this repository (there is no ongoing release or update schedule):
 
 ```bash
 cd bliss-autopricer
@@ -144,7 +153,7 @@ git pull origin
 npm install
 ```
 
-Your configuration files (`pricerConfig.json`, `files/`) will be preserved during updates.
+Back up `pricerConfig.json`, `files/`, and your database before making any changes. These instructions are historical and there is no guarantee of compatibility or safe upgrades.
 
 ## 🔌 WebSocket Relay Configuration
 
@@ -183,30 +192,26 @@ The autopricer will connect to `ws://localhost:7789/relay` when relay mode is en
 - **Better Reliability**: Centralized connection management with automatic failover
 - **Compliance**: Respects backpack.tf's single connection per API key limitation
 
-## 🤝 Contributing
+## 🤝 Forking and Community Development
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+I am **not accepting or maintaining feature requests, bug reports, or pull requests** for this project. Anyone interested in carrying it forward is welcome to fork the code and maintain their own version, subject to the MIT licence. A fork is independent and is not endorsed or supported by me.
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## ⚡ Support
+## ⚡ Support and Maintenance Status
 
-- **🐛 Bug Reports**: [Open an issue](https://github.com/OliverPerring/bliss-autopricer/issues)
-- **💡 Feature Requests**: [Submit a suggestion](https://github.com/OliverPerring/bliss-autopricer/issues)
-- **📖 Documentation**: Check the [docs](docs/) folder
+**There is no official support for Bliss Autopricer.** I am no longer monitoring issues, reviewing pull requests, troubleshooting installations, or providing fixes. Existing documentation in the [docs](docs/) directory remains available as a reference only and may be outdated.
+
+If you encounter bugs, security issues, or broken integrations, you will need to resolve them yourself or seek help from others maintaining their own forks.
 
 ---
 
 <div align="center">
 
-**Built with ❤️ for the TF2 trading community**
+**Bliss Autopricer — Discontinued / Unmaintained**
 
-_Continuing Jack Richards' Pricer with modern enhancements_
+*Thanks to everyone who used or contributed to the project, and to [Jack Richards](https://github.com/jack-richards/bptf-autopricer) for the original project.*
 
 </div>
