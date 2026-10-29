@@ -1,13 +1,13 @@
 # Bliss Autopricer
 
-> [!CAUTION]
-> **PROJECT DISCONTINUED — NO LONGER MAINTAINED**
+> [!IMPORTANT]
+> **MAINTENANCE STATUS — LIMITED SUPPORT / NO ACTIVE DEVELOPMENT**
 >
-> I am no longer developing or maintaining Bliss Autopricer. **No further updates, bug fixes, security patches, compatibility updates, or technical support are planned.**
+> Bliss Autopricer is no longer actively developed or maintained by me. I am not planning new features, regular releases, or ongoing troubleshooting and compatibility support. **Pull requests containing fixes are welcome and will be considered for acceptance**, but I cannot guarantee review or merge times.
 >
-> This repository is retained for reference and for anyone who wishes to fork or continue the project independently. The software is provided **as-is**, and I cannot guarantee that it still works with current versions of TF2Autobot, backpack.tf, Steam, or its dependencies.
+> **This self-hosted pricer will remain publicly available.** I have no plans to take down the repository or prevent anyone from running their own instance. However, the software is provided **as-is**, without guarantees of compatibility, security updates, or continued operation.
 >
-> **Please do not open issues or pull requests expecting a response, review, or fix from me.** If you wish to continue development, you are welcome to fork the repository in accordance with its licence.
+> Bliss Autopricer was my earlier pricing project, developed before [PriceDB](https://pricedb.io/). **The PriceDB pricer is a separate project and service**, not a hosted instance or drop-in continuation of Bliss Autopricer. As I cannot realistically maintain two independent pricers, my ongoing development focus is on PriceDB rather than this self-hosted project.
 
 [![npm version](https://img.shields.io/npm/v/pg-promise?label=pg-promise)](https://www.npmjs.com/package/pg-promise)
 [![Node.js](https://img.shields.io/badge/node-%3E=22.0.0-brightgreen)](https://nodejs.org/)
@@ -192,9 +192,11 @@ The autopricer will connect to `ws://localhost:7789/relay` when relay mode is en
 - **Better Reliability**: Centralized connection management with automatic failover
 - **Compliance**: Respects backpack.tf's single connection per API key limitation
 
-## 🤝 Forking and Community Development
+## 🤝 Fixes and Community Contributions
 
-I am **not accepting or maintaining feature requests, bug reports, or pull requests** for this project. Anyone interested in carrying it forward is welcome to fork the code and maintain their own version, subject to the MIT licence. A fork is independent and is not endorsed or supported by me.
+**Pull requests for bug fixes, compatibility fixes and security fixes are welcome and will be considered for acceptance.** Please keep changes focused and explain what they fix. Reviews and merges are subject to my availability; accepting fixes does not mean active development or a commitment to ongoing support.
+
+I am not planning to develop new features or maintain a regular release schedule. You are also welcome to fork and maintain your own version under the MIT licence.
 
 ## 📄 License
 
@@ -202,15 +204,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## ⚡ Support and Maintenance Status
 
-**There is no official support for Bliss Autopricer.** I am no longer monitoring issues, reviewing pull requests, troubleshooting installations, or providing fixes. Existing documentation in the [docs](docs/) directory remains available as a reference only and may be outdated.
+**Bliss Autopricer remains publicly available for self-hosting, but receives limited support.** I am no longer offering routine troubleshooting, new feature development, or guaranteed fixes or releases. Community pull requests for fixes are welcome and may be reviewed and merged when time permits. Existing documentation in the [docs](docs/) directory remains available as a reference and may be outdated.
 
-If you encounter bugs, security issues, or broken integrations, you will need to resolve them yourself or seek help from others maintaining their own forks.
+If you encounter bugs, security issues, or broken integrations, please do not rely on a fix being provided. Contributions addressing these problems are welcome.
 
 ---
 
 <div align="center">
 
-**Bliss Autopricer — Discontinued / Unmaintained**
+**Bliss Autopricer — No Active Development / Limited Support**
 
 *Thanks to everyone who used or contributed to the project, and to [Jack Richards](https://github.com/jack-richards/bptf-autopricer) for the original project.*
 
